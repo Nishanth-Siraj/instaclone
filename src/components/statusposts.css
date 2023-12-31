@@ -1,0 +1,95 @@
+.statusPosts
+{
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    width:60%;
+}
+
+.statusPic
+{
+    border-radius: 50px;
+    position: absolute;
+    top: 5.5%;
+    left: 4.5%;
+}
+
+.imgContainer.posts {
+    width: 47px; /* Set the desired width and height for your circular image */
+    height: 47px;
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide overflow to maintain the circular shape */
+    position: relative;
+    margin: 0;
+  }
+
+  .imgContainer::before.posts {
+    content: ""; /* Create a pseudo-element to apply the gradient background */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, red, purple); /* Set your desired gradient colors */
+    border-radius: inherit; /* Inherit the border-radius from the parent */
+    z-index: -1; /* Place the pseudo-element behind the image */
+  }
+  .statusPic.postStatus
+  {
+      border-radius: 50px;
+      position: absolute;
+      top: 7.5%;
+      left: 5.5%;
+  }
+  .topNavBar
+{
+    display: none;
+}
+  @media only screen and (max-width: 1115px) {
+    .statusPosts
+    {
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .topNavBar
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .topNavBarSearch
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .statusUser:nth-child(1)
+    {
+        display: none;
+    }
+    .statusUser:nth-child(2)
+    {
+        display: none;
+    }
+  } 
+
+  @media only screen and (max-width: 418px) {
+    .statusUser:nth-child(3)
+    {
+        display: none;
+    }
+    .statusUser:nth-child(4)
+    {
+        display: none;
+    }
+    .statusUser:nth-child(5)
+    {
+        display: none;
+    }
+  }
+

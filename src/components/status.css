@@ -1,0 +1,57 @@
+.status {
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.imgContainer {
+    width: 67px;
+    /* Set the desired width and height for your circular image */
+    height: 67px;
+    border-radius: 50%;
+    /* Make the container circular */
+    overflow: hidden;
+    /* Hide overflow to maintain the circular shape */
+    position: relative;
+    margin: 0;
+}
+
+.imgContainer::before {
+    content: "";
+    /* Create a pseudo-element to apply the gradient background */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, red, purple);
+    /* Set your desired gradient colors */
+    border-radius: inherit;
+    /* Inherit the border-radius from the parent */
+    z-index: -1;
+    /* Place the pseudo-element behind the image */
+}
+
+.statusUser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.statusUser a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.statusPic {
+    border-radius: 50px;
+    position: absolute;
+    top: 5.5%;
+    left: 4.5%;
+}
+

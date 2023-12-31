@@ -1,0 +1,110 @@
+.posts
+{
+    max-width: 100%;
+    color: white;
+
+}
+
+.imgContainer.posts {
+    width: 47px; /* Set the desired width and height for your circular image */
+    height: 47px;
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide overflow to maintain the circular shape */
+    position: relative;
+    margin: 0;
+  }
+
+  .imgContainer::before.posts {
+    content: ""; /* Create a pseudo-element to apply the gradient background */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, red, purple); /* Set your desired gradient colors */
+    border-radius: inherit; /* Inherit the border-radius from the parent */
+    z-index: -1; /* Place the pseudo-element behind the image */
+  }
+  .statusPic.postStatus
+  {
+      border-radius: 50px;
+      position: absolute;
+      top: 7.5%;
+      left: 5.5%;
+  }
+
+  .singlePost
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    margin: 20px auto;
+}
+.singlePostTop
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    /* background: teal; */
+}
+.singlePostTop > *
+{
+    margin-left: 10px;
+}
+.postOpen
+{
+    margin-left: auto;
+    cursor: pointer;
+}
+
+
+.singlePostReaction
+{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.reaction
+{
+    margin-right: 10px;
+}
+.reaction:nth-child(4){
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.singlePostComments
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+.comments
+{
+    margin: 2px 0;
+}
+
+.gray
+{
+    color:gray
+}
+
+@media only screen and (max-width: 1115px) {
+    .singlePost
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        margin: 20px auto;
+    }
+}

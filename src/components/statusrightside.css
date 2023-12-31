@@ -1,0 +1,72 @@
+.rightSide
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    /* background-color: aqua; */
+    width: 20%;
+}
+.statusRightSideUser
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    font-size: 13px;
+    color:gray
+}
+.statusRightSideUser a
+{
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+}
+.user a
+{
+    font-size: 17px;
+
+}
+.user
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.user a
+{
+    text-decoration: none;
+    color: white;
+}
+.userLike a
+{
+    text-decoration: none;
+    color:aqua;
+}
+.user span
+{
+    color: rgb(161, 161, 161);
+}
+
+.statusPicUser
+{
+    width:40px;
+    height:40px;
+    border-radius: 50px;
+}
+
+.contact
+{
+    font-size: 12px;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 1115px) {
+    .rightSide {
+      display: none;
+    }
+  } 

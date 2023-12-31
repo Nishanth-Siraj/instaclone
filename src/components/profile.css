@@ -1,0 +1,53 @@
+.userz
+{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    z-index: 1111;
+}
+.userz img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.userDetails
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+.userPersonal
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.userPersonal > *
+{
+    margin-right: 10px;
+}
+.userPostCount > *
+{
+    margin-right: 10px;
+}
+.userPersonal > button
+{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background: #303030;
+    color:white;
+}
+
+.userDetails > *
+{
+    margin: 5px ;
+}
